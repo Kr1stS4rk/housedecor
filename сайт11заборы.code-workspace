@@ -1,0 +1,13 @@
+{
+    "folders": [
+		{
+			"path": "../сайт11заборы"
+		},
+		{
+			"path": "."
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "сайт 12 housedecor"
+    }
+}
