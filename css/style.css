@@ -119,10 +119,25 @@ body {
   text-transform: uppercase;
 }
 .header__cart {
-  z-index: 2;
-  padding: 20px;
-  margin: -20px;
+  position: relative;
+    z-index: 2;
+  display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
 }
+.header__cart::before {
+  content: "";
+  position: absolute;
+  inset: -30px; /* увеличивает область клика на 8px со всех сторон */
+
+}
+
 /* explore */
 .explore {
   margin-block: 46px;
@@ -234,13 +249,13 @@ body {
   bottom: 0;
 }
 .categories__card-content {
+    position: relative;
   text-align: center;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  position: relative;
+
 }
 .categories__card-title {
   margin-top: 48px;
@@ -328,7 +343,7 @@ body {
   left: 184px;
   top: 91px;
 }
-.arrivals__item-title {
+.arrivals__title {
   margin-bottom: 50px;
   font-weight: 600;
   font-size: 40px;
@@ -336,11 +351,11 @@ body {
   letter-spacing: 0.25px;
   color: #ffffff;
 }
-.arrivals__item-info {
+.arrivals__info {
   display: grid;
   gap: 15px;
 }
-.arrivals__item-label {
+.arrivals__label {
   color: #ffffff;
 }
 
@@ -622,7 +637,7 @@ body {
     font-size: 35px;
   }
   .categories__item-label {
-    top: -40px;
+    top: -21px;
     left: 33%;
   }
   .categories__img {
@@ -640,18 +655,16 @@ body {
     left: 58px;
     top: 51px;
   }
-  .arrivals__item-title {
+  .arrivals__title {
     margin-bottom: 26px;
     font-weight: 600;
     font-size: 35px;
   }
-  .arrivals__item-info {
+  .arrivals__info {
     display: grid;
-    gap: 15px;
+    gap: 18px;
   }
-  .arrivals__item-label {
-    color: #ffffff;
-  }
+ 
 
   /* FEATURE */
   .features__list {
@@ -674,7 +687,7 @@ body {
   /* SOLUTION */
   .section--title {
     font-size: 35px;
-    margin-bottom: 29px;
+    margin-bottom: 21px;
   }
   .solution__img {
     margin-bottom: 26px;
@@ -698,6 +711,7 @@ body {
   .sellers__inner {
     padding-bottom: 65px;
   }
+  .sellers__title{margin-bottom: 32px;}
   .sellers__item img {
     margin-bottom: 13px;
   }
@@ -734,10 +748,12 @@ body {
   .footer__info {
     margin-top: 22px;
   }
+  .footer__socials{gap:20px;}
   .footer__social {
     width: 35px;
     height: 37px;
   }
+  .footer__logo{max-width: 142px;}
 }
 
 @media (max-width: 599.99px) {
@@ -805,6 +821,7 @@ body {
   .categories__item-label {
     font-size: 10px;
     left: 38%;
+    top: -35px;
   }
   .categories__card-title {
     font-size: 24px;
@@ -831,8 +848,8 @@ body {
     background-position: center 93%;
     height: 243px;
   }
-  .arrivals__item-info {
-    gap: 17px;
+  .arrivals__info {
+    gap: 12px;
   }
   .arrivals__item-title {
     font-size: 24px;
