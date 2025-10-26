@@ -110,6 +110,7 @@ body {
   justify-content: space-between;
   flex-basis: 50%;
 }
+
 .nav__list {
   display: flex;
   gap: 31px;
@@ -557,12 +558,13 @@ body {
     text-align: center;
     transition: transform 0.5s ease;
   }
-
-  .header__nav.header__nav--open {
-    transform: translateY(0);
-    opacity: 1;
+.header__nav--open{
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+  .header__nav{
     z-index: 2;
-    pointer-events: auto;
     display: block;
     transition: transform 0.5s ease;
   }
