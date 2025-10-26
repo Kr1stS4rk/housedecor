@@ -500,6 +500,7 @@ body {
   .btn-small {
     max-width: 191px;
   }
+  .header__cart{margin-right:6px}
   .header__logo {
     flex-basis: auto;
   }
