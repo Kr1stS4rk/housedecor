@@ -740,6 +740,7 @@ body {
 }
 
 @media (max-width: 599.99px) {
+  .header__inner {padding-inline: 18px;}
   .section {
     margin-bottom: 40px;
   }
