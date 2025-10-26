@@ -757,7 +757,7 @@ body {
 }
 
 @media (max-width: 599.99px) {
-  .header__inner {padding-inline: 18px;}
+  .header__inner {padding-inline: 23px 6px}
   .section {
     margin-bottom: 40px;
   }
@@ -771,6 +771,8 @@ body {
   .header__logo img {
     width: 103px;
   }
+      .header__cart {
+        margin-right: 0px;}
   /* explore */
   .explore {
     margin-block: 0 20px;
