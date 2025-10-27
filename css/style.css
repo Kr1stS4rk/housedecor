@@ -145,7 +145,6 @@ body {
 }
 .explore__inner {
   display: flex;
-  align-items: stretch;
   background-color: #f6f6f6;
 }
 .explore__info {
