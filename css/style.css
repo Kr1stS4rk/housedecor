@@ -67,7 +67,7 @@ body {
 .container {
   max-width: 1286px;
   padding-inline: var(--container-padding-desktop);
-  margin-inline: auto;
+  margin:auto;
 }
 .section {
   margin-bottom: 80px;
