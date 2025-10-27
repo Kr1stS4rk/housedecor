@@ -587,6 +587,7 @@ body {
   }
   .explore__inner {
     flex-direction: column;
+    margin-inline:calc(-1 * var(--container-padding-tablet));
   }
   .explore__info {
     padding: 35px 0 38px 33px;
@@ -860,7 +861,7 @@ body {
   .arrivals__info {
     gap: 12px;
   }
-  .arrivals__item-title {
+  .arrivals__title {
     font-size: 24px;
     margin-bottom: 12px;
   }
