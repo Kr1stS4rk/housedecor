@@ -1,3 +1,8 @@
+:root{
+  --container-padding-desktop:15px;
+  --container-padding-tablet:10px;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -61,7 +66,7 @@ body {
 }
 .container {
   max-width: 1286px;
-  padding-inline: 15px;
+  padding-inline: var(--container-padding-desktop);
   margin-inline: auto;
 }
 .section {
@@ -507,7 +512,7 @@ body {
     margin-bottom: 60px;
   }
   .container {
-    padding-inline: 10px;
+    padding-inline: var(--container-padding-tablet);
   }
   .btn {
     font-size: 16px;
@@ -620,6 +625,7 @@ body {
     gap: 20px;
   }
   .categories__item {
+    margin-inline:calc(-1*var(--container-padding-tablet));
     flex-direction: row;
     justify-content: flex-start;
     padding: 74px 10px 40px 41px;
