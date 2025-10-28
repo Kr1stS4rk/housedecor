@@ -1,7 +1,4 @@
-:root{
-  --container-padding-desktop:15px;
-  --container-padding-tablet:10px;
-}
+
 
 html {
   box-sizing: border-box;
@@ -41,6 +38,11 @@ img {
   display: block;
   height: auto;
   max-width: 100%;
+}
+
+:root{
+  --container-padding-desktop:15px;
+  --container-padding-tablet:10px;
 }
 @font-face {
   font-family: "Inter,sans-serif";
