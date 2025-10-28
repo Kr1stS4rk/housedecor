@@ -1,4 +1,12 @@
 
+@font-face {
+  font-family: "Inter,sans-serif";
+  src: url("../fonts/Inter-VariableFont_YTLC\,opsz\,wdth\,wght.woff2")
+    format("woff2-variations");
+  src: url("../fonts/Inter-VariableFont_YTLC\,opsz\,wdth\,wght.woff2")
+    format("woff2") tech("variations");
+  font-weight: 300 700;
+} 
 
 html {
   box-sizing: border-box;
@@ -44,14 +52,7 @@ img {
   --container-padding-desktop:15px;
   --container-padding-tablet:10px;
 }
-@font-face {
-  font-family: "Inter,sans-serif";
-  src: url("../fonts/Inter-VariableFont_YTLC\,opsz\,wdth\,wght.woff2")
-    format("woff2-variations");
-  src: url("../fonts/Inter-VariableFont_YTLC\,opsz\,wdth\,wght.woff2")
-    format("woff2") tech("variations");
-  font-weight: 300 700;
-}
+
 
 body {
   font-family: "Inter", sans-serif;
