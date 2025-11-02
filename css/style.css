@@ -67,6 +67,7 @@ body {
   overflow: hidden;
 }
 .container {
+  width: 100%;
   max-width: 1286px;
   padding-inline: var(--container-padding-desktop);
   margin: auto;
