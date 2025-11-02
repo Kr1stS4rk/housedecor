@@ -71,9 +71,36 @@ body {
   padding-inline: var(--container-padding-desktop);
   margin: auto;
 }
+/* overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.overlay--active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
 .section {
   margin-bottom: 80px;
 }
+.section--title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+}
+/* header */
 .header {
   background-color: #a1a483;
 }
@@ -92,6 +119,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+/* header menu */
 .menu {
   display: none;
 }
@@ -397,13 +425,7 @@ body {
   padding-inline: 13px;
 }
 /* solution */
-.section--title {
-  margin-bottom: 50px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 1.2;
-}
+
 .solution__img {
   margin-bottom: 46px;
   object-fit: contain;
@@ -455,7 +477,9 @@ body {
   margin-right: 14px;
 }
 /* FOOTER */
-
+.btn-large {
+  width: 262px;
+}
 .footer__wrapper {
   background-color: #a1a483;
   padding: 112px 0;
@@ -480,9 +504,6 @@ body {
 }
 .footer__legal {
   font-size: 14px;
-}
-.btn--large {
-  width: 262px;
 }
 .footer__btn {
   margin-bottom: 61px;
@@ -584,27 +605,9 @@ body {
     align-items: center;
     gap: 20px;
     font-size: 20px;
-    padding-block: 88px 22px;
+    padding-block: 133px 116px;
     transition: transform 0.5s ease;
   }
-  .overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-  z-index: 1;
-}
-
-.overlay--active {
-  opacity: 1;
-  pointer-events: all;
-}
-
-.no-scroll {
-  overflow: hidden;
-}
 
   /* EXPLORE */
   .explore {
@@ -795,12 +798,21 @@ body {
 }
 
 @media (max-width: 599.99px) {
-  .header__inner {
-    padding-inline: 23px 6px;
+  /* Большая кнопка — ограничение по ширине */
+  .btn-large {
+    max-width: 177px;
   }
+
+  /*
+Секции страницы
+ */
+
+  /* Общие отступы между секциями */
   .section {
     margin-bottom: 40px;
   }
+
+  /* Заголовок секции — размер, центрирование */
   .section--title {
     font-size: 24px;
     margin-bottom: 24px;
@@ -808,6 +820,9 @@ body {
     margin-inline: auto;
   }
   /* HEADER */
+  .header__inner {
+    padding-inline: 23px 6px;
+  }f
   .header__logo img {
     width: 103px;
   }
@@ -987,9 +1002,7 @@ body {
   .footer__btn {
     margin-bottom: 20px;
   }
-  .btn--large {
-    max-width: 177px;
-  }
+
   .footer__info {
     margin-top: 21px;
     flex-direction: column;
