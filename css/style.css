@@ -798,11 +798,7 @@ body {
 }
 
 @media (max-width: 599.99px) {
-  /* Большая кнопка — ограничение по ширине */
-  .btn-large {
-    max-width: 177px;
-  }
-
+ 
   /*
 Секции страницы
  */
@@ -1019,5 +1015,10 @@ body {
     width: 32px;
     height: 34px;
   }
+   /* Большая кнопка — ограничение по ширине */
+  .btn-large {
+    max-width: 177px;
+  }
+
 }
 /* .explore__img{aspect-ratio: 300 / 256;} */
