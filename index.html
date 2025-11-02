@@ -14,8 +14,12 @@
         <div class="container">
           <div class="header__inner">
             <a href="#" class="header__logo"
-              ><img src="images/logo.svg" alt="Housedecor"
-            /></a>
+
+              >
+              <picture>
+                <img src="images/logo.svg" alt="Housedecor" 
+                            />
+              </picture></a>
             <nav class="menu">
               <button class="menu__btn">
                 <span></span>
@@ -39,12 +43,15 @@
               class="header__cart"
               aria-label="Открыть корзину"
             >
-              <img
-                src="images/icon-cart.svg"
-                width="17"
-                height="16"
-                class="header__cart-icon"
-              />
+
+              <picture>
+                <img
+                  src="images/icon-cart.svg"
+                  width="17"
+                  height="16"
+                  class="header__cart-icon"
+                />
+              </picture>
             </button>
           </div>
         </div>
@@ -67,12 +74,15 @@
                 <a class="explore__btn btn btn-small" href="#">EXPLORE </a>
               </div>
               <div class="explore__img">
-                <img
-                  src="images/explore.jpg"
-                  alt="explore-image"
-                  width="628"
-                  height="589"
-                />
+                <picture>
+                  <source srcset="images/explore.webp" type="image/webp" >
+                  <img
+                    src="images/explore.jpg"
+                    alt="explore-image"
+                    width="628"
+                    height="589"
+                  />
+                </picture>
               </div>
             </div>
           </div>
@@ -87,7 +97,7 @@
         <section class="categories">
           <div class="container">
             <div class="categories__inner">
-              <article class="categories__item">
+              <article class="categories__item" data-text="Hello Motherfucker">
                 <div class="categories__card-content">
                   <p class="categories__item-label article--label">
                     New collection
@@ -96,7 +106,10 @@
                   <a class="categories__card-btn btn btn-small" href="#">show more </a>
                 </div>
                 <div class="categories__img">
-                  <img src="images/categories-1.png" alt="" />
+                  <picture>
+                    <source srcset="images/categories-1.webp" type="image/webp">
+                    <img src="images/categories-1.png" alt="" />
+                  </picture>
                 </div>
                 <!-- <img src="images/categories-1.png" width="273" height="234" alt=""> -->
               </article>
@@ -106,7 +119,10 @@
                   <a class="categories__card-btn btn btn-small" href="#">show more </a>
                 </div>
                 <div class="categories__img">
-                  <img src="images/categories-2.png" alt="" />
+                  <picture>
+                    <source srcset="images/categories-2.webp" type="image/webp">
+                    <img src="images/categories-2.png" alt="" />
+                  </picture>
                 </div>
                 <!-- <img src="images/categories-2.png" width="359" height="275" alt=""> -->
               </article>
@@ -116,7 +132,10 @@
                   <a class="categories__card-btn btn btn-small" href="#">show more </a>
                 </div>
                 <div class="categories__img">
-                  <img src="images/categories-3.png" alt="" />
+                  <picture>
+                    <source srcset="images/categories-3.webp" type="image/webp">
+                    <img src="images/categories-3.png" alt="" />
+                  </picture>
                 </div>
                 <!-- <img src="images/categories-3.png" width="287" height="246" alt=""> -->
               </article>
@@ -129,91 +148,135 @@
               <div class="partners__track">
                 <ul class="partners__list">
                   <li>
-                    <img
-                      src="images/partner1.svg"
-                      alt="Партнер 1"
-                      loading="lazy"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="images/partner2.svg"
-                      alt="Партнер 2"
-                      loading="lazy"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="images/partner3.svg"
-                      alt="Партнер 3"
-                      loading="lazy"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="images/partner4.svg"
-                      alt="Партнер 4"
-                      loading="lazy"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="images/partner5.svg"
-                      alt="Партнер 5"
-                      loading="lazy"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="images/partner6.svg"
-                      alt="Партнер 6"
-                      loading="lazy"
-                    />
-                  </li>
+  <picture>
+    
+    <img
+      src="images/partner1.svg"
+      alt="Партнер 1"
+      loading="lazy"
+    />
+  </picture>
+</li>
+
+<li>
+  <picture>
+  
+    <img
+      src="images/partner2.svg"
+      alt="Партнер 2"
+      loading="lazy"
+    />
+  </picture>
+</li>
+
+<li>
+  <picture>
+    
+    <img
+      src="images/partner3.svg"
+      alt="Партнер 3"
+      loading="lazy"
+    />
+  </picture>
+</li>
+
+<li>
+  <picture>
+    
+    <img
+      src="images/partner4.svg"
+      alt="Партнер 4"
+      loading="lazy"
+    />
+  </picture>
+</li>
+
+<li>
+  <picture>
+
+    <img
+      src="images/partner5.svg"
+      alt="Партнер 5"
+      loading="lazy"
+    />
+  </picture>
+</li>
+
+<li>
+  <picture>
+    
+    <img
+      src="images/partner6.svg"
+      alt="Партнер 6"
+      loading="lazy"
+    />
+  </picture>
+</li>
                 </ul>
                 <ul class="partners__list">
-                  <li>
-                    <img
-                      src="images/partner1.svg"
-                      alt="Партнер 1"
-                      loading="lazy"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="images/partner2.svg"
-                      alt="Партнер 2"
-                      loading="lazy"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="images/partner3.svg"
-                      alt="Партнер 3"
-                      loading="lazy"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="images/partner4.svg"
-                      alt="Партнер 4"
-                      loading="lazy"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="images/partner5.svg"
-                      alt="Партнер 5"
-                      loading="lazy"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="images/partner6.svg"
-                      alt="Партнер 6"
-                      loading="lazy"
-                    />
-                  </li>
+                 <li>
+  <picture>
+    
+    <img
+      src="images/partner1.svg"
+      alt="Партнер 1"
+      loading="lazy"
+    />
+  </picture>
+</li>
+
+<li>
+  <picture>
+    
+    <img
+      src="images/partner2.svg"
+      alt="Партнер 2"
+      loading="lazy"
+    />
+  </picture>
+</li>
+
+<li>
+  <picture>
+    
+    <img
+      src="images/partner3.svg"
+      alt="Партнер 3"
+      loading="lazy"
+    />
+  </picture>
+</li>
+
+<li>
+  <picture>
+    
+    <img
+      src="images/partner4.svg"
+      alt="Партнер 4"
+      loading="lazy"
+    />
+  </picture>
+</li>
+
+<li>
+  <picture>
+    
+    <img
+      src="images/partner5.svg"
+      alt="Партнер 5"
+      loading="lazy"
+    />
+  </picture>
+</li>
+
+<li>
+  <picture>
+    
+    <img
+      src="images/partner6.svg" />
+  </picture>
+</li>
+      
                 </ul>
               </div>
             </div>
@@ -241,7 +304,7 @@
             <div class="features__inner">
               <ul class="features__list">
                 <li class="features__item">
-                  <img src="images/features-1.svg" alt="" />
+                  <picture><img src="images/features-1.svg" alt="" /></picture>
                   <h4 class="features__title">Long-life objects</h4>
                   <p class="features__desc">
                     These items offer exceptional quality, resilience, and
@@ -249,7 +312,7 @@
                   </p>
                 </li>
                 <li class="features__item">
-                  <img src="images/features-2.svg" alt="" />
+                  <picture><img src="images/features-2.svg" alt="" /></picture>
                   <h4 class="features__title">Fast Shipping</h4>
                   <p class="features__desc">
                     Shop with confidence and enjoy hassle-free, quick shipping
@@ -257,7 +320,7 @@
                   </p>
                 </li>
                 <li class="features__item">
-                  <img src="images/features-3.svg" alt="" />
+                  <picture><img src="images/features-3.svg" alt="" /></picture>
                   <h4 class="features__title">10% cashback</h4>
                   <p class="features__desc">
                     No hidden fees—just straightforward cashback on every
@@ -274,11 +337,14 @@
               <h2 class="solution__title section--title">
                 Furniture designed for you
               </h2>
-              <img
-                src="images/solution.jpg"
-                alt="solution-img"
-                class="solution__img"
-              />
+             <picture>
+                <source srcset="images/solution.webp" type="image/webp">
+               <img
+                 src="images/solution.jpg"
+                 alt="solution-img"
+                 class="solution__img"
+               />
+             </picture >
               <div class="solution__content">
                 <div class="solution__info">
                   <h4 class="solution__info-subtitle">Our design solutions</h4>
@@ -298,117 +364,173 @@
               <h2 class="sellers__title section--title">Shop best sellers</h2>
               <div class="sellers__list">
                 <article class="sellers__item">
-                  <img src="images/seller-1.jpg" alt="" />
-                  <div class="sellers__item-content">
-                    <div class="sellers__item-info">
-                      <h3 class="sellers__item-title">Shelves</h3>
-                      <p class="sellers__item-price">
-                        <data value="0.00">€0.00</data>
-                      </p>
-                    </div>
-                    <button class="sellers__btn" aria-label="Add to cart">
-                      <img src="images/Cart.svg" alt="" />
-                    </button>
-                  </div>
-                </article>
-                <article class="sellers__item">
-                  <img src="images/seller-2.jpg" alt="" />
-                  <div class="sellers__item-content">
-                    <div class="sellers__item-info">
-                      <h3 class="sellers__item-title">Bench</h3>
-                      <p class="sellers__item-price">
-                        <data value="5.00">€5.00</data>
-                      </p>
-                    </div>
-                    <button class="sellers__btn" aria-label="Add to cart">
-                      <img src="images/Cart.svg" alt="" />
-                    </button>
-                  </div>
-                </article>
-                <article class="sellers__item">
-                  <img src="images/seller-3.jpg" alt="" />
-                  <div class="sellers__item-content">
-                    <div class="sellers__item-info">
-                      <h3 class="sellers__item-title">Coffee Table</h3>
-                      <p class="sellers__item-price">
-                        <data value="5.00">€5.00</data>
-                      </p>
-                    </div>
-                    <button class="sellers__btn" aria-label="Add to cart">
-                      <img src="images/Cart.svg" alt="" />
-                    </button>
-                  </div>
-                </article>
-                <article class="sellers__item">
-                  <img src="images/seller-4.jpg" alt="" />
-                  <div class="sellers__item-content">
-                    <div class="sellers__item-info">
-                      <h3 class="sellers__item-title">Table & Chairs Set</h3>
-                      <p class="sellers__item-price">
-                        <data value="5.00">€5.00</data>
-                      </p>
-                    </div>
-                    <button class="sellers__btn" aria-label="Add to cart">
-                      <img src="images/Cart.svg" alt="" />
-                    </button>
-                  </div>
-                </article>
-                <article class="sellers__item">
-                  <img src="images/seller-5.jpg" alt="" />
-                  <div class="sellers__item-content">
-                    <div class="sellers__item-info">
-                      <h3 class="sellers__item-title">Cabinet</h3>
-                      <p class="sellers__item-price">
-                        <data value="5.00">€5.00</data>
-                      </p>
-                    </div>
-                    <button class="sellers__btn" aria-label="Add to cart">
-                      <img src="images/Cart.svg" alt="" />
-                    </button>
-                  </div>
-                </article>
-                <article class="sellers__item">
-                  <img src="images/seller-6.jpg" alt="" />
-                  <div class="sellers__item-content">
-                    <div class="sellers__item-info">
-                      <h3 class="sellers__item-title">Armchair</h3>
-                      <p class="sellers__item-price">
-                        <data value="5.00">€5.00</data>
-                      </p>
-                    </div>
-                    <button class="sellers__btn" aria-label="Add to cart">
-                      <img src="images/Cart.svg" alt="" />
-                    </button>
-                  </div>
-                </article>
-                <article class="sellers__item">
-                  <img src="images/seller-7.jpg" alt="" />
-                  <div class="sellers__item-content">
-                    <div class="sellers__item-info">
-                      <h3 class="sellers__item-title">Sofa</h3>
-                      <p class="sellers__item-price">
-                        <data value="5.00">€5.00</data>
-                      </p>
-                    </div>
-                    <button class="sellers__btn" aria-label="Add to cart">
-                      <img src="images/Cart.svg" alt="" />
-                    </button>
-                  </div>
-                </article>
-                <article class="sellers__item">
-                  <img src="images/seller-8.jpg" alt="" />
-                  <div class="sellers__item-content">
-                    <div class="sellers__item-info">
-                      <h3 class="sellers__item-title">Product Name</h3>
-                      <p class="sellers__item-price">
-                        <data value="5.00">€5.00</data>
-                      </p>
-                    </div>
-                    <button class="sellers__btn" aria-label="Add to cart">
-                      <img src="images/Cart.svg" alt="" />
-                    </button>
-                  </div>
-                </article>
+  <picture>
+    <source srcset="images/seller-1.webp" type="image/webp">
+    <img src="images/seller-1.jpg" alt="">
+  </picture>
+  <div class="sellers__item-content">
+    <div class="sellers__item-info">
+      <h3 class="sellers__item-title">Shelves</h3>
+      <p class="sellers__item-price">
+        <data value="0.00">€0.00</data>
+      </p>
+    </div>
+    <button class="sellers__btn" aria-label="Add to cart">
+      <picture>
+        <source srcset="images/Cart.webp" type="image/webp">
+        <img src="images/Cart.svg" alt="">
+      </picture>
+    </button>
+  </div>
+</article>
+
+<article class="sellers__item">
+  <picture>
+    <source srcset="images/seller-2.webp" type="image/webp">
+    <img src="images/seller-2.jpg" alt="">
+  </picture>
+  <div class="sellers__item-content">
+    <div class="sellers__item-info">
+      <h3 class="sellers__item-title">Bench</h3>
+      <p class="sellers__item-price">
+        <data value="5.00">€5.00</data>
+      </p>
+    </div>
+    <button class="sellers__btn" aria-label="Add to cart">
+      <picture>
+        <source srcset="images/Cart.webp" type="image/webp">
+        <img src="images/Cart.svg" alt="">
+      </picture>
+    </button>
+  </div>
+</article>
+
+<article class="sellers__item">
+  <picture>
+    <source srcset="images/seller-3.webp" type="image/webp">
+    <img src="images/seller-3.jpg" alt="">
+  </picture>
+  <div class="sellers__item-content">
+    <div class="sellers__item-info">
+      <h3 class="sellers__item-title">Coffee Table</h3>
+      <p class="sellers__item-price">
+        <data value="5.00">€5.00</data>
+      </p>
+    </div>
+    <button class="sellers__btn" aria-label="Add to cart">
+      <picture>
+        <source srcset="images/Cart.webp" type="image/webp">
+        <img src="images/Cart.svg" alt="">
+      </picture>
+    </button>
+  </div>
+</article>
+
+<article class="sellers__item">
+  <picture>
+    <source srcset="images/seller-4.webp" type="image/webp">
+    <img src="images/seller-4.jpg" alt="">
+  </picture>
+  <div class="sellers__item-content">
+    <div class="sellers__item-info">
+      <h3 class="sellers__item-title">Table & Chairs Set</h3>
+      <p class="sellers__item-price">
+        <data value="5.00">€5.00</data>
+      </p>
+    </div>
+    <button class="sellers__btn" aria-label="Add to cart">
+      <picture>
+        <source srcset="images/Cart.webp" type="image/webp">
+        <img src="images/Cart.svg" alt="">
+      </picture>
+    </button>
+  </div>
+</article>
+
+<article class="sellers__item">
+  <picture>
+    <source srcset="images/seller-5.webp" type="image/webp">
+    <img src="images/seller-5.jpg" alt="">
+  </picture>
+  <div class="sellers__item-content">
+    <div class="sellers__item-info">
+      <h3 class="sellers__item-title">Cabinet</h3>
+      <p class="sellers__item-price">
+        <data value="5.00">€5.00</data>
+      </p>
+    </div>
+    <button class="sellers__btn" aria-label="Add to cart">
+      <picture>
+        <source srcset="images/Cart.webp" type="image/webp">
+        <img src="images/Cart.svg" alt="">
+      </picture>
+    </button>
+  </div>
+</article>
+
+<article class="sellers__item">
+  <picture>
+    <source srcset="images/seller-6.webp" type="image/webp">
+    <img src="images/seller-6.jpg" alt="">
+  </picture>
+  <div class="sellers__item-content">
+    <div class="sellers__item-info">
+      <h3 class="sellers__item-title">Armchair</h3>
+      <p class="sellers__item-price">
+        <data value="5.00">€5.00</data>
+      </p>
+    </div>
+    <button class="sellers__btn" aria-label="Add to cart">
+      <picture>
+        <source srcset="images/Cart.webp" type="image/webp">
+        <img src="images/Cart.svg" alt="">
+      </picture>
+    </button>
+  </div>
+</article>
+
+<article class="sellers__item">
+  <picture>
+    <source srcset="images/seller-7.webp" type="image/webp">
+    <img src="images/seller-7.jpg" alt="">
+  </picture>
+  <div class="sellers__item-content">
+    <div class="sellers__item-info">
+      <h3 class="sellers__item-title">Sofa</h3>
+      <p class="sellers__item-price">
+        <data value="5.00">€5.00</data>
+      </p>
+    </div>
+    <button class="sellers__btn" aria-label="Add to cart">
+      <picture>
+        <source srcset="images/Cart.webp" type="image/webp">
+        <img src="images/Cart.svg" alt="">
+      </picture>
+    </button>
+  </div>
+</article>
+
+<article class="sellers__item">
+  <picture>
+    <source srcset="images/seller-8.webp" type="image/webp">
+    <img src="images/seller-8.jpg" alt="">
+  </picture>
+  <div class="sellers__item-content">
+    <div class="sellers__item-info">
+      <h3 class="sellers__item-title">Product Name</h3>
+      <p class="sellers__item-price">
+        <data value="5.00">€5.00</data>
+      </p>
+    </div>
+    <button class="sellers__btn" aria-label="Add to cart">
+      <picture>
+        <source srcset="images/Cart.webp" type="image/webp">
+        <img src="images/Cart.svg" alt="">
+      </picture>
+    </button>
+  </div>
+</article>
+
               </div>
             </div>
           </div>
@@ -433,20 +555,30 @@
               <div class="footer__bottom">
                 <div class="footer__info">
                   <a href="#" class="footer__logo"
-                    ><img src="images/footer-logo.svg" alt="Housedecor" /></a>
+                    >
+                    <picture><img src="images/footer-logo.svg" alt="Housedecor" /></picture>
+                  </a>
                     <div class="footer__socials">
                       <a href="#" class="footer__social" aria-label="Instagram"
-                          ><img alt="" src="images/linkedin.svg"
-                        /></a>
+                          ><picture><img alt="" src="images/linkedin.svg"
+                        />
+                      </picture>
+                      
+                      </a>
                         <a href="#" class="footer__social" aria-label="Instagram"
-                          ><img alt="" src="images/facebook.svg"
-                        /></a>
+                          ><picture><img alt="" src="images/facebook.svg"
+                        /></picture>
+                      </a>
                         <a href="#" class="footer__social" aria-label="Instagram"
-                          ><img alt="" src="images/instagram.svg"
-                        /></a>
+                          ><picture><img alt="" src="images/instagram.svg"
+                        />
+                      </picture>
+                      </a>
                         <a href="#" class="footer__social" aria-label="Instagram"
-                          ><img alt="" src="images/youtube.svg"
-                        /></a>
+                          ><picture><img alt="" src="images/youtube.svg"
+                        />
+                      </picture>
+                      </a>
                     </div>
                 </div>
                
