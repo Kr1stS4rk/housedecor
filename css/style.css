@@ -360,8 +360,8 @@ body {
 /* arrivals */
 .arrivals {
   background-image: image-set(
-    url("/images/arrival.webp") type("image/webp"),
-    url("/images/arrival.jpg") type("image/jpeg")
+    url("../images/arrival.webp") type("image/webp"),
+    url("../images/arrival.jpg") type("image/jpeg")
   );
   background-repeat: no-repeat;
   background-size: cover;
